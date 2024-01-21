@@ -3,14 +3,14 @@
 // for.
 
 let valor = Number(prompt("Digite um valor"));
-let divisores = 0;
+let numeroPrimo = 0;
 function retornarValor(valor) {
   for (let i = 1; i <= valor; i++) {
     if (valor % i == 0) {
-      divisores++;
+      numeroPrimo++;
     }
   }
-  if (divisores == 2) {
+  if (numeroPrimo == 2) {
     console.log(true);
   } else {
     console.log(false);

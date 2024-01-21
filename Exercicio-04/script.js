@@ -6,10 +6,15 @@
 // Entrada: 3672
 // Saída: 1:1:12
 
-let segundos = Number(
+let tempoSegundos = Number(
   prompt("Digite o tempo de trabalho desta fabrica em segundos")
 );
 
-function tempoDeDuracao (segundos){
-    
+function tempoDeDuracao(tempoSegundos) {
+  let tempoHoras = parseInt(tempoSegundos / 3600);
+  let tempoMinutos = parseInt((tempoSegundos % 3600) / 60);
+  let segundosRestantes = tempoSegundos % 60;
+  console.log(`${tempoHoras}: ${tempoMinutos}: ${segundosRestantes}`);
 }
+
+tempoDeDuracao(tempoSegundos);
